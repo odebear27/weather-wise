@@ -1,0 +1,115 @@
+:root {
+    --section-overlay: rgba(0, 0, 0, 0.7);
+    --background-overlay: rgba(0, 0, 0, 0.2)
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-overlay);
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    color: white;
+}
+  
+.section__inputs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__inputs>input {
+    border: 0.8px solid white;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.section__inputs>button {
+    border-radius: 0.4rem;
+    padding: 0.8rem;
+    font-size: 16px;
+    background-color: var(--section-overlay);
+    color: white;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.button {
+    transition: transform 0.3s ease;
+}
+
+.section__inputs>input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: rgb(60, 54, 54);
+}
+  
+.section__icon__temperature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: 0.4rem;
+    padding: 1rem;
+    background-color: var(--section-overlay);
+    margin-bottom: 8rem;
+}
+  
+.icon, .temperature {
+    flex-basis: 50%;
+}
+  
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.temperature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature>h2 {
+    font-size: 20px;
+    display: inline;
+}
+
+.temperature h2 span {
+    margin-right: 2px;
+}
+
+.degree-unit {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Adjust the value based on your preference */
+    }
+}
+  
