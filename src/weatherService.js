@@ -1,7 +1,5 @@
 import axios from "axios";
 
-// const API_KEY = "7a195e0df95dfc041e20428a47b56568";
-
 const getCoordinates = (city) => {
     const GET_COORDINATES_URL = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${process.env.REACT_APP_API_KEY}`;
 
