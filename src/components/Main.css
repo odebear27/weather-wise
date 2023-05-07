@@ -75,7 +75,7 @@ input::placeholder {
     border-radius: 0.4rem;
     padding: 1rem;
     background-color: var(--section-overlay);
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
   
 .icon, .temperature {
